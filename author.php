@@ -245,6 +245,12 @@ $posts = get_posts($args);
                                         </li>
                                     <?php } ?>
 
+                                    <?php if(is_array($strutture) && count($strutture) > 0)  { ?>
+                                        <li>
+                                            <a class="list-item scroll-anchor-offset" href="#art-par-strutture" title="Vai al paragrafo <?php _e("Strutture", "design_scuole_italia"); ?>"><?php _e("Strutture", "design_scuole_italia"); ?></a>
+                                        </li>
+                                    <?php } ?>
+                                    
                                     <?php
                                     if(trim($altre_info) != ""){
                                         ?>
